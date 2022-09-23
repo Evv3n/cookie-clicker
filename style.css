@@ -1,0 +1,25 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: auto;
+}
+
+.right-panel {
+    background-color: rgb(255, 255, 255);
+    float: right;
+    height: 100%;
+}
+.middle-panel {
+    background-color: rgb(255, 255, 255);
+    float: right;
+    height: 100%;
+}
+.left-panel {
+    background-color: rgb(255, 255, 255);
+    float: right;
+    height: 100%;
+}
