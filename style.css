@@ -1,16 +1,17 @@
 body {
-    height: 100%;
-    width: 100%;
+    height: 1920px;
+    width: 1080px;
     margin: 0;
     padding: 0;
     display: flex;
-    overflow: auto;
+    overflow: hidden;
 }
 
 :root {
     --primary: #c2382e;
     --light: #EEEEEE;
     --dark: #212121;
+    --glow: #fff352;
 }
 
 * {
@@ -36,6 +37,7 @@ nav {
     z-index: 99;
     background-color: var(--dark);
     right: 0;
+    padding-bottom: 73px;
     padding: 16px 32px;
     border-bottom: 3px solid var(--primary);
 }
@@ -138,7 +140,58 @@ h1:hover {
 
 .separatorLeft {
     width: 16px;
-    height: 2000px;
+    height: 100%;
     z-index: 98;
     background-color: var(--dark);
 }
+
+.separatorRight {
+    width: 16px;
+    height: 100%;
+    z-index: 98;
+    background-color: var(--dark);
+}
+
+.trans {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+}
+.left-section {
+    padding-top: 73px;
+    height: 100%;
+}
+
+.gymName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: var(--dark);
+}
+.gymName:hover {
+    color: var(--primary);
+    cursor: crosshair;
+}
+.strengthNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: var(--dark);
+}
+.strengthNumber:hover {
+    color: var(--primary);
+    cursor: crosshair;
+}
+.strengthPerSecond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: var(--dark);
+}
+.strengthPerSecond:hover {
+    color: var(--primary);
+    cursor: crosshair;
+}
+

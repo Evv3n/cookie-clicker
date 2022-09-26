@@ -14,9 +14,9 @@
         <div class="container">
         <h1>STRENGTH CLICKER</h1>
         <div class="menu">
-            <a class="is-active" href="#">Settings</a>
-            <a href="#">Achievments</a>
-            <a href="#">Stats</a>
+            <a class="is-active" href="#settings">Settings</a>
+            <a href="#achievements">Achievments</a>
+            <a href="#stats">Stats</a>
         </div>
         <button class="hamburger">
             <span></span>
@@ -26,20 +26,22 @@
     </div>
     </nav>
     <div class="left-section">
-        <div class="gymName"></div>
-        <div class="strength"></div>
+        <div class="gymName">GYM</div>
+        <div class="strengthNumber"></div>
         <div class="strengthPerSecond"></div>
         <div class="bicep-anchor">
-            <button id="bicep"><img src="images/image-removebg-preview (2).png" alt=""></button>
-            <div class="strengthNumbers"></div>
+        <button class="trans" id="bicep" onclick="strengthNumber()"><img src="images/image-removebg-preview (2).png" alt=""></button>
+        <div class="strengthNumbers"></div>
+        <audio autoplay controls>
+            <source src="music/Zyzz - You Are My Angel (HD).mp3">
+        </audio>
         </div>
     </div>
         <div class="separatorLeft"></div>
         <div class="seperatorRight"></div>
         <div class="sectionMiddle"></div>
         <div class="center-section"></div>
-        <div class="music-player-container">
-    </div>
+        <div class="music-player-container"></div>
     
 </body>
 <script src="script.js"></script>
