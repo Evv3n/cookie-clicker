@@ -159,6 +159,7 @@ h1:hover {
 .left-section {
     padding-top: 73px;
     height: 100%;
+    max-width: 360px;
 }
 
 .gymName {
@@ -195,3 +196,8 @@ h1:hover {
     cursor: crosshair;
 }
 
+audio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

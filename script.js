@@ -1,18 +1,14 @@
 const hamburger = document.querySelector('.hamburger');
+var strengthNumber = document.querySelector('strengthNumber');
 
+var strengthNumber = 1;
 hamburger.addEventListener('click', function(){
-  console.log('clicked')
   this.classList.toggle('is-active');
 });
 
-function strengthNumber() {
-  document.querySelector('.strengthNumber')
-}
-
-
-
-
-
+function numberadd() {
+  document.getElementById('strengthNumber').InnerHTML = `${strengthNumber}`;
+};
 
 
 
