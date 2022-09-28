@@ -1,14 +1,30 @@
 const hamburger = document.querySelector('.hamburger');
-var strengthNumber = document.querySelector('strengthNumber');
+const strengthNumber = document.getElementById("strengthNumbers");
+const strengthClickReg = document.querySelector("#strengthClickReg");
+var count = 0;
+strengthNumber.innerHTML = 'Strength: ' + count;
 
-var strengthNumber = 1;
+const handleIncrement = () => {
+  count++;
+  strengthNumber.innerHTML = 'Strength: ' + count;
+}
+
+const incrementCount = document.getElementById('strengthbutton');
+
+incrementCount.addEventListener("click", handleIncrement);
+
 hamburger.addEventListener('click', function(){
   this.classList.toggle('is-active');
 });
 
-function numberadd() {
-  document.getElementById('strengthNumber').InnerHTML = `${strengthNumber}`;
-};
+
+
+//if (count > 0) {
+  //strengthClickReg.style.visibility = 'visible';
+  //console.log('registered')
+//};
+
+
 
 
 

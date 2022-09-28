@@ -167,6 +167,7 @@ h1:hover {
     justify-content: center;
     align-items: center;
     font-weight: 600;
+    font-size: 25px;
     color: var(--dark);
 }
 .gymName:hover {
@@ -178,6 +179,7 @@ h1:hover {
     justify-content: center;
     align-items: center;
     font-weight: 600;
+    font-size: 25px;
     color: var(--dark);
 }
 .strengthNumber:hover {
@@ -189,11 +191,15 @@ h1:hover {
     justify-content: center;
     align-items: center;
     font-weight: 600;
+    font-size: 25px;
     color: var(--dark);
 }
 .strengthPerSecond:hover {
     color: var(--primary);
     cursor: crosshair;
+}
+#strengthClickReg {
+    visibility: hidden;
 }
 
 audio {
