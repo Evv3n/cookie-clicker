@@ -146,9 +146,10 @@ h1:hover {
 }
 
 .separatorRight {
+    position: absolute;
     width: 16px;
     height: 100%;
-    z-index: 98;
+    right: 300px;
     background-color: var(--dark);
 }
 
@@ -161,7 +162,22 @@ h1:hover {
     height: 100%;
     max-width: 360px;
 }
-
+.right-section {
+    padding-top: 73px;
+    position: absolute;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    min-width: 300px;
+}
+.storetext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--dark);
+}
 .gymName {
     display: flex;
     justify-content: center;
@@ -174,6 +190,7 @@ h1:hover {
     color: var(--primary);
     cursor: crosshair;
 }
+
 .strengthNumber {
     display: flex;
     justify-content: center;
@@ -202,8 +219,29 @@ h1:hover {
     visibility: hidden;
 }
 
-audio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.musicplayer {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+#dark {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+/*Display none e midtertidlig*/
+#tempBox {
+    display: none;
+}
+.pwoimg1 {
+    width: 100px;
+    height: 100px;
+}
+.pwoimg2 {
+    width: 100px;
+    height: 100px;
 }

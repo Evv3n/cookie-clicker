@@ -2,6 +2,7 @@ const hamburger = document.querySelector('.hamburger');
 const strengthNumber = document.getElementById("strengthNumbers");
 const strengthClickReg = document.querySelector("#strengthClickReg");
 var count = 0;
+
 strengthNumber.innerHTML = 'Strength: ' + count;
 
 const handleIncrement = () => {
@@ -16,6 +17,7 @@ incrementCount.addEventListener("click", handleIncrement);
 hamburger.addEventListener('click', function(){
   this.classList.toggle('is-active');
 });
+
 
 
 
