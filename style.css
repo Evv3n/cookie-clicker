@@ -260,6 +260,26 @@ hr {
     color: var(--dark);
     text-align: center;
 }
+#bulkContainer {
+    border: 3px;
+    padding: 20px;
+}
+#bulkBuy1 {
+    width: 50%;
+    float: left;
+    border: 2px;
+}
+#bulkBuy10 {
+    width: 50%;
+    float: left;
+    border: 2px;
+}
+#bulkBuy100 {
+    width: 50%;
+    float: left;
+    border: 2px;
+}
+
 .glow:hover {
     font-size: 20px;
     font-weight: 600;
