@@ -139,8 +139,23 @@ h1:hover {
 }
 hr {
     border-width: 5px;
+    border: solid;
 }
-
+.upgrades {
+    min-height: 104px;
+    max-width: 300px;
+}
+#bicep-price {
+    width: 20px;
+    height: 20px;
+}
+.info-about-pwoimg1 {
+    display: none;
+}
+#pwoimgtest:hover + .info-about-pwoimg1{
+    display: block;
+    position: relative;
+}
 
 .separatorLeft {
     width: 16px;
@@ -255,36 +270,37 @@ hr {
     height: 100px;
 }
 .glow {
+    padding-right: 20px;
     font-size: 20px;
     font-weight: 600;
     color: var(--dark);
-    text-align: center;
 }
 #bulkContainer {
-    border: 3px;
-    padding: 20px;
+    display: flex;
+
 }
-#bulkBuy1 {
-    width: 50%;
-    float: left;
-    border: 2px;
+.buy1 {
+    font-size: 20px;
+    flex: 1;
+    font-weight: 600;
+    cursor: context-menu;
+
 }
-#bulkBuy10 {
-    width: 50%;
-    float: left;
-    border: 2px;
+.buy10 {
+    font-size: 20px;
+    flex: 1;
+    font-weight: 600;
 }
-#bulkBuy100 {
-    width: 50%;
-    float: left;
-    border: 2px;
+.buy100 {
+    font-size: 20px;
+    flex: 1;
+    font-weight: 600;
 }
 
 .glow:hover {
     font-size: 20px;
     font-weight: 600;
     color: var(--dark);
-    text-align: center;
     cursor: crosshair;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
