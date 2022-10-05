@@ -14,9 +14,10 @@
         <div class="container">
         <h1>STRENGTH CLICKER</h1>
         <div id="menu1"class="menu">
-            <a id="settingsa" class="is-active" href="#settings">Settings</a>
+            <a id="settingsa" class="is-active" href="#settings" onclick="settings_open()">Settings</a>
             <a id="achievmentsa"href="#achievements">Achievments</a>
             <a id="statsa" href="#stats">Stats</a>
+            <a id="trainers" href="trainers">Trainer Shop</a>
         </div>
         <button class="hamburger">
             <span></span>
@@ -49,6 +50,7 @@
     </div>
         <div class="separatorLeft"></div>
         <div class="middle-section">
+            <div id="settings"></div>
             <div id="rows">
                 <div class="row"></div>
                 <div class="row"></div>
@@ -62,12 +64,13 @@
             <hr class="new1">
             <div class="upgrades">
                 <button id="pwoimgtest"class='trans'><img class="pwoimg1" draggable="false" src="images/pwoimg1.png" alt=""></button>
-                <div class="info-about-pwoimg1">
+                <!----<div class="info-about-pwoimg1">
                     <div class="product-name">Psychotic PWO</div>
                     <div id="pwo1-price" class="price"><img id="bicep-price" src="images/bicep button.png" alt=""></div>
                     <div id="info-box-pwo1" class="info-box"></div>
-                    <div class="click-to-purchase"></div>
+                    <div class="click-to-purchase"></div>  
                 </div>
+                ---->
                 <button class='trans'></button><img class="pwoimg2" draggable="false" src="images/pwoimg 2.png" alt=""></button>
                 <button class='trans'></button><img class="pwoimg3" src="images/pwoimg3.png" alt=""></button>
             </div>
@@ -79,6 +82,10 @@
                 <div class="buy100">100</div>
             </div>
             <hr>
+            <div id="exercise-container">
+                <div id="dumbell-curls"><img id="dumbell-curlsimg" src="images/dumbell curls.png" alt=""></div>
+                <hr>
+            </div>
         </div>
         <div class="music-player-container"></div>
 </body>
