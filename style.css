@@ -34,7 +34,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 98;
     background-color: var(--dark);
     right: 0;
     padding-bottom: 73px;
@@ -123,7 +123,10 @@ h1:hover {
     background-color: var(--primary);
 
 }
-
+ul {
+    list-style-type: disc;
+    color: white;
+}
 @media (max-width: 768px) {
     .hamburger {
         display: none
@@ -145,22 +148,55 @@ hr {
     min-height: 104px;
     max-width: 300px;
 }
-#bicep-price {
+.bicep-price {
     width: 20px;
     height: 20px;
+    display: flex;
 }
 .info-about-pwoimg1 {
+    position: relative;
     display: none;
+    visibility: hidden;
 }
 #pwoimgtest:hover + .info-about-pwoimg1{
+    visibility: visible;
     display: block;
-    position: relative;
+    width: 400px;
+    background-color: var(--dark);
+    color: #fff;
+    border-radius: 3px;
+    border: 2px solid;
+    text-align: center;
+    border-color: var(--primary);
+    position: absolute;
+    z-index: 99;
+    top: 80px;
+    right: 105%;
 }
-
+.info-about-pwoimg2 {
+    position: relative;
+    display: none;
+    visibility: hidden;
+}
+#pwoimgtest2:hover + .info-about-pwoimg2{
+    visibility: visible;
+    display: block;
+    width: 400px;
+    background-color: var(--dark);
+    color: #fff;
+    border-radius: 3px;
+    border: 2px solid;
+    text-align: center;
+    border-color: var(--primary);
+    position: absolute;
+    z-index: 99;
+    top: 80px;
+    right: 105%;
+}
 .separatorLeft {
     width: 16px;
     height: 100%;
-    z-index: 98;
+    z-index: 96;
     background-color: var(--dark);
 }
 
@@ -249,10 +285,37 @@ hr {
     display: none;
     position: absolute;
     height: 100%;
+    width: 1870px;
     z-index: 90;
     padding-top: 73px;
     background-color: black;
-    
+}
+#achievements {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 1870px;
+    z-index: 90;
+    padding-top: 73px;
+    background-color: black;
+}
+#trainers {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 1870px;
+    z-index: 90;
+    padding-top: 73px;
+    background-color: black;
+}
+#stats {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 1870px;
+    z-index: 90;
+    padding-top: 73px;
+    background-color: black;
 }
 #dark {
     position: absolute;
@@ -269,7 +332,10 @@ hr {
 }
 #dumbell-curlsimg {
     display: flex;
-    width: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
     height: 300px;
 }
 .pwoimg1 {

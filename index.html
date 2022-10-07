@@ -14,10 +14,10 @@
         <div class="container">
         <h1>STRENGTH CLICKER</h1>
         <div id="menu1"class="menu">
-            <a id="settingsa" class="is-active" href="#settings" onclick="settings_open()">Settings</a>
-            <a id="achievmentsa"href="#achievements">Achievments</a>
-            <a id="statsa" href="#stats">Stats</a>
-            <a id="trainers" href="trainers">Trainer Shop</a>
+            <a id="settingsa" class="is-active" href="#settingsaa" onclick="settings_open()">Settings</a>
+            <a id="achievementsa"href="#achieve">Achievements</a>
+            <a id="statsa" href="#statsa">Stats</a>
+            <a id="trainersa" href="#trainer shop">Trainer Shop</a>
         </div>
         <button class="hamburger">
             <span></span>
@@ -43,14 +43,20 @@
         <div id="strengthNumbers" class="strengthNumber"></div>
         <div class="strengthPerSecond">Per Second: 0</div>
         <button id="strengthbutton" class="trans"><img draggable="false" src="images/bicep button.png" alt=""></button>
-        <div id="strengthClickReg">+1 Strength</div>
+        <hr>
         <div class="musicplayer">
-            <audio controls src=""></audio>
+            <audio controls autoplay>
+                <source src="music/Tevvez - Legend Ψ.mp3" type="audio/mp3">
+                Your browser does not support audio
+            </audio>
         </div>
     </div>
         <div class="separatorLeft"></div>
         <div class="middle-section">
-            <div id="settings"></div>
+            <div id="settings">This is the settings div</div>
+            <div id="achievements">This is the achievements div</div>
+            <div id="stats">This is the stats div</div>
+            <div id="trainer-shop">This is the trainer-shop div</div>
             <div id="rows">
                 <div class="row"></div>
                 <div class="row"></div>
@@ -64,16 +70,30 @@
             <hr class="new1">
             <div class="upgrades">
                 <button id="pwoimgtest"class='trans'><img class="pwoimg1" draggable="false" src="images/pwoimg1.png" alt=""></button>
-                <!----<div class="info-about-pwoimg1">
-                    <div class="product-name">Psychotic PWO</div>
-                    <div id="pwo1-price" class="price"><img id="bicep-price" src="images/bicep button.png" alt=""></div>
-                    <div id="info-box-pwo1" class="info-box"></div>
+                <div class="info-about-pwoimg1">
+                    <div class="product-name">PSYCHOTIC PWO</div>
+                    <div id="pwo1-price" class="price"></div>
+                    <span><img class="bicep-price" src="images/bicep button.png" alt=""></span>
+                    <div id="info-box-pwo1" class="info-box">
+                    <ul>
+                        <li><h6>PASSIVELY GIVES 1 STRENGTH</h6></li>
+                        <li><h6>GIVES MILD PUMP</h6></li>
+                    </ul>
+                    </div>
                     <div class="click-to-purchase"></div>  
                 </div>
-                ---->
-                <button class='trans'></button><img class="pwoimg2" draggable="false" src="images/pwoimg 2.png" alt=""></button>
+                <button id="pwoimgtest2" class='trans'><img class="pwoimg2" draggable="false" src="images/pwoimg 2.png" alt=""></button>
+                <div class="info-about-pwoimg2">
+                <div class="product-name">INSANITY PWO</div>
+                <div id="pwo2-price" class="price">18 <img class="bicep-price"src="images/bicep button.png" alt=""></div>
+                <div id="info-box-pwo2" class="info-box">
+                        <li><h6>PASSIVELY GIVER 3 STRENGTH</h6></li>
+                        <li><h6>GIVES YOU CRAZY PUMP</h6></li>
+                </div>
+                </div>
                 <button class='trans'></button><img class="pwoimg3" src="images/pwoimg3.png" alt=""></button>
             </div>
+            <div id="cursor"></div>
             <hr> 
             <div id="bulkContainer">
                 <div class="glow">BUY</div>
@@ -87,7 +107,6 @@
                 <hr>
             </div>
         </div>
-        <div class="music-player-container"></div>
 </body>
 <script src="script.js"></script>
 </html>
