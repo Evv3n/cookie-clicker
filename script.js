@@ -18,7 +18,7 @@ const stats = document.getElementById('stats');
 const trainers = document.getElementById('trainers');
 const strengthbutton = document.querySelector('#strengthbutton');
 
-var strength = 100000;
+var strength = 0;
 var passive_income = 0;
 //Prices
 var price_for_pwo1 = 100;

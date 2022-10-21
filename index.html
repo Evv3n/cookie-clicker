@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon"  type="image/x-icon" href="images/bicep button.png">
 </head>
-<body>
+<body bgcolor="#323232">
     <nav>
         <div class="container">
         <h1>STRENGTH CLICKER</h1>
@@ -45,15 +45,24 @@
         <button id="strengthbutton" class="trans"><img draggable="false" src="images/bicep button.png" alt=""></button>
         <hr>
         <div class="musicplayer">
-         <audio controls autoplay>
-                <source src="music/Tevvez - Legend Ψ.mp3" type="audio/mp3">
-                Your browser does not support audio
-            </audio>
+            <audio src="music/Tevvez - Legend Ψ.mp3" autoplay></audio>
         </div>
     </div>
         <div class="separatorLeft"></div>
         <div class="middle-section">
-            <div id="settings">This is the settings div</div>
+            <div id="settings"><img id="x_icon" src="images/X icon.png" alt="">
+                <div class="section">
+                    Settings
+                </div>
+                <div class="block">
+                    <div class="title">
+                        General
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="subsection"></div>
+                </div>
+            </div>
             <div id="achievements">This is the achievements div</div>
             <div id="stats">This is the stats div</div>
             <div id="trainer-shop">This is the trainer-shop div</div>
@@ -101,16 +110,22 @@
             <div id="cursor"></div>
             <hr> 
             <div id="bulkContainer">
-                <div class="glow">BUY</div>
-                <div class="buy1">1</div>
-                <div class="buy10">10</div>
-                <div class="buy100">100</div>
+                <div class="glow"><H6>BUY</H6></div>
+                <div class="buy1"><h6>1</H6></div>
+                <div class="buy10"><H6>10</H6></div>
+                <div class="buy100"><H6>100</H6></div>
             </div>
             <hr>
             <div id="exercise-container">
-                <div id="dumbell-curls"><img id="dumbell-curlsimg" src="images/dumbell curls.png" alt=""></div>
+                <div id="dumbell-curls"><img id="dumbell-curlsimg" draggable="false" src="images/dumbell curls.png" alt=""><hr><h6>Dumbell Curls</h6></div>
                 <hr>
             </div>
+            <div id="dumbell-curls-info" class="info-box">
+                <h6>PASSIVELY GIVES 1 STRENGTH</h6>
+                <h6>GIVES MILD PUMP</h6>
+            </div>
+            <div id="bench-press"><img id="bench-pressimg" draggable="false" src="images/Bench press.png" alt=""><hr><h6>Bench Press</h6></div>
+            <hr>
         </div>
 </body>
 <script src="script.js"></script>

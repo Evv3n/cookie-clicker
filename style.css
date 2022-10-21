@@ -146,10 +146,16 @@ ul {
 hr {
     border-width: 5px;
     border: solid;
+    color: var(--dark);
 }
 .upgrades {
     min-height: 104px;
     max-width: 300px;
+}
+h6 {
+    font-weight: 600;
+    text-decoration: double;
+    color: var(--light);
 }
 .bicep-price {
     width: 20px;
@@ -257,7 +263,7 @@ hr {
     justify-content: center;
     font-weight: 600;
     font-size: 25px;
-    color: var(--dark);
+    color: var(--light);
 }
 .gymName {
     display: flex;
@@ -265,7 +271,7 @@ hr {
     align-items: center;
     font-weight: 600;
     font-size: 25px;
-    color: var(--dark);
+    color: var(--light);
 }
 .gymName:hover {
     color: var(--primary);
@@ -279,7 +285,7 @@ hr {
     align-items: center;
     font-weight: 600;
     font-size: 25px;
-    color: var(--dark);
+    color: var(--light);
 }
 .strengthNumber:hover {
     color: var(--primary);
@@ -291,7 +297,7 @@ hr {
     align-items: center;
     font-weight: 600;
     font-size: 25px;
-    color: var(--dark);
+    color: var(--light);
 }
 .strengthPerSecond:hover {
     color: var(--primary);
@@ -300,7 +306,13 @@ hr {
 #strengthClickReg {
     visibility: hidden;
 }
-
+.section {
+    font-variant: small-caps;
+    text-align: center;
+    padding: 0px 16px;
+    margin: 12px 0px;
+    
+}
 .musicplayer {
     position: absolute;
     left: 0px;
@@ -310,16 +322,21 @@ hr {
     display: none;
     position: absolute;
     height: 100%;
-    width: 1870px;
+    width: 1584px;
     z-index: 90;
     padding-top: 73px;
-    background-color: black;
+}
+#x_icon {
+    left: 25px;
+    width: 35px;
+    height: 35px;
+    margin: 25px;
 }
 #achievements {
     display: none;
     position: absolute;
     height: 100%;
-    width: 1870px;
+    width: 1584px;
     z-index: 90;
     padding-top: 73px;
     background-color: black;
@@ -328,7 +345,7 @@ hr {
     display: none;
     position: absolute;
     height: 100%;
-    width: 1870px;
+    width: 1584px;
     z-index: 90;
     padding-top: 73px;
     background-color: black;
@@ -337,7 +354,7 @@ hr {
     display: none;
     position: absolute;
     height: 100%;
-    width: 1870px;
+    width: 1584px;
     z-index: 90;
     padding-top: 73px;
     background-color: black;
@@ -360,12 +377,48 @@ hr {
     max-width: 1228px;
     height: 100%;
 }
+#dumbell-curls {
+    color: var(--light);
+    text-align: center;
+    font-weight: 600;
+}
+#dumbell-curls-info {
+    position: relative;
+    display: none;
+    visibility: hidden;
+}
+#dumbell-curlsimg:hover + #dumbell-curls-info {
+    visibility: visible;
+    display: block;
+    width: 400px;
+    background-color: var(--dark);
+    color: #fff;
+    border-radius: 3px;
+    border: 2px solid;
+    text-align: center;
+    border-color: var(--primary);
+    position: absolute;
+    z-index: 99;
+    top: 80px;
+    right: 105%;
+}
 #dumbell-curlsimg {
     display: flex;
     margin: auto;
     justify-content: center;
     align-items: center;
     width: 170px;
+    height: 300px;
+}
+#bench-press {
+    text-align: center;
+}
+#bench-pressimg {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
     height: 300px;
 }
 .pwoimg1 {
@@ -384,7 +437,7 @@ hr {
     padding-right: 20px;
     font-size: 20px;
     font-weight: 600;
-    color: var(--dark);
+    color: var(--light);
 }
 #bulkContainer {
     display: flex;
@@ -395,23 +448,25 @@ hr {
     flex: 1;
     font-weight: 600;
     cursor: context-menu;
-
+    color: var(--light);
 }
 .buy10 {
     font-size: 20px;
     flex: 1;
     font-weight: 600;
+    color: var(--light);
 }
 .buy100 {
     font-size: 20px;
     flex: 1;
     font-weight: 600;
+    color: var(--light);
 }
 
 .glow:hover {
     font-size: 20px;
     font-weight: 600;
-    color: var(--dark);
+    color: var(--light);
     cursor: crosshair;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
