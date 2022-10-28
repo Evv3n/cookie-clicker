@@ -50,27 +50,20 @@
     </div>
         <div class="separatorLeft"></div>
         <div class="middle-section">
-            <div id="settings"><img id="x_icon" src="images/X icon.png" alt="">
+            <div id="settings">
+                <img id="x_icon" src="images/X icon.png" alt="">
                 <div class="section">
-                    Settings
-                </div>
-                <div class="block">
-                    <div class="title">
-                        General
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="subsection"></div>
+                    <h1>Settings</h1>
                 </div>
             </div>
             <div id="achievements">This is the achievements div</div>
             <div id="stats">This is the stats div</div>
-            <div id="trainer-shop">This is the trainer-shop div</div>
+            <div id="trainer-shop"></div>
             <div id="rows">
+                <div class="bicep-curl-row"></div>
                 <div class="row"></div>
                 <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
+                <div class="row"></div> 
             </div>
         </div>
         <div class="separatorRight"></div>
@@ -110,21 +103,22 @@
             <div id="cursor"></div>
             <hr> 
             <div id="bulkContainer">
-                <div class="glow"><H6>BUY</H6></div>
-                <div class="buy1"><h6>1</H6></div>
-                <div class="buy10"><H6>10</H6></div>
-                <div class="buy100"><H6>100</H6></div>
+                <div class="glow"><button class="trans" id="buy">BUY</button></div>
+                <div class="buy1"><button onclick="setbuyamt(this)" class="trans" id="one">1</button></div>
+                <div class="buy10"><button onclick="setbuyamt(this)" class="trans" id="ten">10</button></div>
+                <div class="buy100"><button onclick="setbuyamt(this)" class="trans" id="hundred">100</button></div>
             </div>
             <hr>
             <div id="exercise-container">
-                <div id="dumbell-curls"><img id="dumbell-curlsimg" draggable="false" src="images/dumbell curls.png" alt=""><hr><h6>Dumbell Curls</h6></div>
-                <hr>
+                <div id="dumbell-curls"><button id="dumbell-curl" class="trans"><img id="dumbell-curlsimg" draggable="false" src="images/dumbell curls.png" alt=""></button><hr><h6>Dumbell Curls</h6><h6 id="dumbellpricetag"><img id="dumbell-price" src="images/bicep button.png" alt=""></h6></div>
+                <div id="dumbell-curls-info" class="info-box">
+                    <h6>PASSIVELY GIVES 1 STRENGTH</h6>
+                    <h6>GIVES MILD PUMP</h6>
+                    
+                </div>
+                <hr id="lineBicepCurl">
             </div>
-            <div id="dumbell-curls-info" class="info-box">
-                <h6>PASSIVELY GIVES 1 STRENGTH</h6>
-                <h6>GIVES MILD PUMP</h6>
-            </div>
-            <div id="bench-press"><img id="bench-pressimg" draggable="false" src="images/Bench press.png" alt=""><hr><h6>Bench Press</h6></div>
+            <div id="bench-press"><button id="bench-press" class="trans"><img id="bench-pressimg" draggable="false" src="images/Bench press.png" alt=""></button><hr><h6>Bench Press</h6><h6><img id="dumbell-price" src="images/bicep button.png" alt=""></h6></div>
             <hr>
         </div>
 </body>

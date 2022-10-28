@@ -17,13 +17,35 @@ const trainersa = document.getElementById('trainersa');
 const stats = document.getElementById('stats');
 const trainers = document.getElementById('trainers');
 const strengthbutton = document.querySelector('#strengthbutton');
+const bicepCurl = document.querySelector('#dumbell-curl');
+const dumbell_info = document.querySelector('#dumbell-curls');
+const benchPress = document.querySelector('#bench-press');
+const bicepCurlRow = document.querySelector('.bicep-curl-row');
+const lineBicepCurl = document.querySelector('#lineBicepCurl');
+const dumbellpricetag = document.querySelector('#dumbellpricetag');
 
-var strength = 0;
+//bulk guy
+const buy = document.querySelector('#buy');
+const one = document.querySelector('#one');
+const ten = document.querySelector('#ten');
+const hundred = document.querySelector('#hundred');
+
+buyamount = 1
+
+//variabler
+var strength = 10000000;
 var passive_income = 0;
 //Prices
 var price_for_pwo1 = 100;
 var price_for_pwo2 = 1000;
 var price_for_pwo3 = 10000;
+var price_bicep_curl = 100;
+var price_bench_press = 600;
+
+
+
+dumbellpricetag.innerHTML = price_bicep_curl;
+
 
 const handleIncrement = () => {
   strength++;
@@ -45,7 +67,7 @@ function isActive() {
 };
 
 
-
+bicepCurl.addEventListener('click', buy_bicepCurl);
 pwoimgtest.addEventListener('click', buy_pwo);
 pwoimgtest2.addEventListener('click', buy_pwo2);
 pwoimgtest3.addEventListener('click', buy_pwo3);
@@ -70,7 +92,6 @@ function buy_pwo(){
   if(strength > price_for_pwo1){
     passive_income++;
     strength -= price_for_pwo1;
-    strengthNumber.innerHTML = 'Strength: ' + strength;
     pwoimgtest.style.display = 'none';
   }
 }   
@@ -78,7 +99,6 @@ function buy_pwo2(){
   if(strength > price_for_pwo2){
     passive_income += price_for_pwo2;
     strength -= price_for_pwo2;
-    strengthNumber.innerHTML = 'Strength: ' + strength;
     pwoimgtest2.style.display = 'none';
   }
 }   
@@ -86,10 +106,38 @@ function buy_pwo3(){
   if(strength > price_for_pwo3){
     passive_income += price_for_pwo3;
     strength -= price_for_pwo3;
-    strengthNumber.innerHTML = 'Strength: ' + strength;
     pwoimgtest3.style.display = 'none';
   }
-}   
+}
+function buy_bicepCurl(){
+  if(strength > price_bicep_curl * buyamount){
+    passive_income += 1;
+    strength -= price_bicep_curl * buyamount;
+    f = buyamount
+    
+    for(var i=0, l = f; i < l; i++){
+      dumbellpricetag.innerHTML = price_bicep_curl = Math.ceil(price_bicep_curl * 1.1);
+      bicepCurlRow.style.display = 'block';
+      bicepCurlRow.innerHTML += "<img id='bicepcurlgif' src='images/bicepcurlgif.gif'>"
+    }
+
+    
+    
+  }
+}
+
+function setbuyamt(Object) {
+  console.log(Object)
+  buyamount = Object.innerHTML
+  document.getElementById("one").style.color = "#FFFFFF"
+  document.getElementById("ten").style.color = "#FFFFFF"
+  document.getElementById("hundred").style.color = "#FFFFFF"
+  document.getElementById(Object.id).style.color = "#c2382e"
+
+  dumbellpricetag.innerHTML = price_bicep_curl * buyamount
+  
+}
+    
 var update_strenght = setInterval(myTimer, 1000);
 function myTimer(){
   strength += passive_income;
