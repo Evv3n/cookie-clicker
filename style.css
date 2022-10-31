@@ -263,8 +263,8 @@ h6 {
     display: none;
     padding-top: 73px;
     width: 1225px;
+    max-height: 200px;
     position: absolute;
-    
 }
 
 #bicepcurlgif {
@@ -331,42 +331,93 @@ h6 {
     display: none;
     position: absolute;
     height: 100%;
-    width: 1584px;
+    width: 1229px;
     z-index: 90;
     padding-top: 73px;
 }
+#settings_header {
+    text-align: center;
+}
 #x_icon {
     left: 25px;
-    width: 35px;
-    height: 35px;
-    margin: 25px;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+#logoimg {
+    border-radius: 30px;
+    height: 40px;
+    width: 40px;
 }
 #achievements {
     display: none;
     position: absolute;
     height: 100%;
-    width: 1584px;
+    width: 1229px;
     z-index: 90;
     padding-top: 73px;
-    background-color: black;
+    /*background-image: url(https://cdna.artstation.com/p/assets/images/images/003/195/450/original/vladimir-gaydamashchuk-trophy-room.gif?1470895389);*/
+    background-color: #212121;
 }
-#trainers {
+#trainer-shop {
     display: none;
     position: absolute;
     height: 100%;
-    width: 1584px;
+    width: 1229px;
     z-index: 90;
     padding-top: 73px;
-    background-color: black;
+    background-image: url(https://wallpaper.dog/large/20459326.jpg);
+}
+.frame {
+    display: flex;
+    width: 300px;
+    height: 250px;
+    border: 3px solid var(--primary);
+    background: var(--dark);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+.frame_txt {
+    font-weight: 600;
+    color: var(--light);
+}
+.trainer-img {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+#trainer_shoptxt {
+    color: var(--light);
+    font-weight: 900;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 #stats {
     display: none;
     position: absolute;
     height: 100%;
-    width: 1584px;
+    width: 1229px;
     z-index: 90;
     padding-top: 73px;
-    background-color: black;
+}
+#statstxt {
+    font-weight: 900;
+    text-align: center;
+}
+#generaltxt {
+    padding-bottom: 25px;
+}
+.statsText {
+    color: var(--light);
+    font-weight: 600;
 }
 #dark {
     position: absolute;

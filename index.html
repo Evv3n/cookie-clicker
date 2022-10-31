@@ -7,11 +7,12 @@
     <meta description="This is a website">
     <title>💯STRENGTH CLICKER💯</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon"  type="image/x-icon" href="images/bicep button.png">
+    <link rel="icon"  type="image/x-icon" href="images/nico the noob.PNG">
 </head>
 <body bgcolor="#323232">
     <nav>
         <div class="container">
+        <img id="logoimg" src="images/håkon.PNG" alt="">
         <h1>STRENGTH CLICKER</h1>
         <div id="menu1"class="menu">
             <a id="settingsa" class="is-active" href="#settingsaa" onclick="settings_open()">Settings</a>
@@ -53,12 +54,43 @@
             <div id="settings">
                 <img id="x_icon" src="images/X icon.png" alt="">
                 <div class="section">
-                    <h1>Settings</h1>
+                    <h1 class="settings_txt" id="settings_header">Settings</h1>
+                    <hr>
+                    <h1>General</h1>
+                    <img src="images/music-note-png.png">
                 </div>
             </div>
-            <div id="achievements">This is the achievements div</div>
-            <div id="stats">This is the stats div</div>
-            <div id="trainer-shop"></div>
+            <div id="achievements">
+                <h1></h1>
+            </div>
+            <div id="stats">
+                <h1 class="statsText" id="statstxt">Statistics</h1>
+                <h2 class="statsText" id="generaltxt">General</h2>
+                <div class="statsgeneral">
+                    <h6 class="statsText">Current strength:</h6>
+                    <h6 class="statsText">Buildings owned: </h6>
+                </div>
+            </div>
+            <div id="trainer-shop">
+                <img id="x_icon" onclick="close()" src="images/X icon.png">
+                <center><h1 id="trainer_shoptxt">Trainer Shop</h1></center>
+                <div class="frame">
+                    <h4 class="frame_txt">Dad trainer</h4>
+                    <h6 class="frame_txt">2CPS</h6>
+                    <h6 class="frame_txt">Gives motivation and makes your clicks more effective</h6>
+                    <img class="trainer-img" src="images/dad trainer.png" draggable="false"></div>
+                <div class="frame">
+                    <h4 class="frame_txt">Alpha dad trainer</h4>
+                    <h6 class="frame_txt">10CPS</h6>
+                    <h6 class="frame_txt">Gives motivation and makes your clicks more effective</h6>
+                    <hr>
+                    <img class="trainer-img" src="images/dad trainer 2.png" draggable="false"></div>
+                <div class="frame">
+                    <h4 class="frame_txt">Professional trainer</h4>
+                    <h6 class="frame_txt">30CPS</h6>
+                    <h6 class="frame_txt">Gives motivation and makes your clicks more effective</h6>
+                    <img class="trainer-img" src="images/personal trainer 3.png" draggable="false"></div>
+            </div>
             <div id="rows">
                 <div class="bicep-curl-row"></div>
                 <div class="row"></div>
@@ -118,7 +150,7 @@
                 </div>
                 <hr id="lineBicepCurl">
             </div>
-            <div id="bench-press"><button id="bench-press" class="trans"><img id="bench-pressimg" draggable="false" src="images/Bench press.png" alt=""></button><hr><h6>Bench Press</h6><h6><img id="dumbell-price" src="images/bicep button.png" alt=""></h6></div>
+            <div id="bench-press"><button onclick="setbuyamt(this)" id="bench-press" class="trans"><img id="bench-pressimg" draggable="false" src="images/Bench press.png" alt=""></button><hr><h6>Bench Press</h6><h6 id="benchpricetag"><img id="dumbell-price" src="images/bicep button.png" alt=""></h6></div>
             <hr>
         </div>
 </body>

@@ -15,7 +15,7 @@ const achievements = document.getElementById('achievements');
 const statsa = document.getElementById('statsa');
 const trainersa = document.getElementById('trainersa');
 const stats = document.getElementById('stats');
-const trainers = document.getElementById('trainers');
+const trainer_shop = document.getElementById('trainer-shop');
 const strengthbutton = document.querySelector('#strengthbutton');
 const bicepCurl = document.querySelector('#dumbell-curl');
 const dumbell_info = document.querySelector('#dumbell-curls');
@@ -23,6 +23,9 @@ const benchPress = document.querySelector('#bench-press');
 const bicepCurlRow = document.querySelector('.bicep-curl-row');
 const lineBicepCurl = document.querySelector('#lineBicepCurl');
 const dumbellpricetag = document.querySelector('#dumbellpricetag');
+const benchpricetag = document.querySelector('#benchpricetag');
+const x_icon = document.querySelector('#x_icon');
+
 
 //bulk guy
 const buy = document.querySelector('#buy');
@@ -33,7 +36,7 @@ const hundred = document.querySelector('#hundred');
 buyamount = 1
 
 //variabler
-var strength = 10000000;
+var strength = 100000;
 var passive_income = 0;
 //Prices
 var price_for_pwo1 = 100;
@@ -45,7 +48,7 @@ var price_bench_press = 600;
 
 
 dumbellpricetag.innerHTML = price_bicep_curl;
-
+benchpricetag.innerHTML = price_bench_press;
 
 const handleIncrement = () => {
   strength++;
@@ -75,18 +78,23 @@ settingsa.addEventListener('click', settings_open)
 achievementsa.addEventListener('click', achievements_open)
 statsa.addEventListener('click', stats_open)
 trainersa.addEventListener('click', trainers_open)
+x_icon.addEventListener('click', close);
 
 function settings_open() {
-  settings.style.display = 'flex';
+  settings.style.display = 'block';
 }
 function achievements_open() {
-  achievements.style.display = 'flex';
+  achievements.style.display = 'block';
 }
 function stats_open() {
-  stats.style.display = 'flex';
+  stats.style.display = 'block';
 }
 function trainers_open() {
-  trainers.style.display = 'flex';
+  trainer_shop.style.display = 'block';
+}
+function close() {
+  console.log(passive_income);
+  trainer_shop.style.display = 'none';
 }
 function buy_pwo(){ 
   if(strength > price_for_pwo1){
@@ -118,11 +126,8 @@ function buy_bicepCurl(){
     for(var i=0, l = f; i < l; i++){
       dumbellpricetag.innerHTML = price_bicep_curl = Math.ceil(price_bicep_curl * 1.1);
       bicepCurlRow.style.display = 'block';
-      bicepCurlRow.innerHTML += "<img id='bicepcurlgif' src='images/bicepcurlgif.gif'>"
+      bicepCurlRow.innerHTML += "<img id='bicepcurlgif' draggable=false src='images/bicepcurlgif.gif'>"
     }
-
-    
-    
   }
 }
 
