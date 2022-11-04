@@ -49,9 +49,7 @@ h1 {
     letter-spacing: 2px;
 }
 
-h1:hover {
-    color: var(--primary);
-}
+
 
 .hamburger {
     display: block;
@@ -262,12 +260,24 @@ h6 {
 .bicep-curl-row {
     display: none;
     padding-top: 73px;
-    width: 1225px;
+    width: 1800px;
+    max-height: 200px;
+    position: absolute;
+}
+.bench-press-row {
+    display: none;
+    padding-top: 300px;
+    width: 1800px;
     max-height: 200px;
     position: absolute;
 }
 
 #bicepcurlgif {
+    height: 100px;
+    width: 100px;
+    opacity: 0.5;
+}
+#benchpressgif {
     height: 100px;
     width: 100px;
     opacity: 0.5;
@@ -331,9 +341,10 @@ h6 {
     display: none;
     position: absolute;
     height: 100%;
-    width: 1229px;
+    width: 1870px;
     z-index: 90;
     padding-top: 73px;
+    background-color: #323232;
 }
 #settings_header {
     text-align: center;
@@ -353,20 +364,22 @@ h6 {
     display: none;
     position: absolute;
     height: 100%;
-    width: 1229px;
+    width: 1870px;
     z-index: 90;
     padding-top: 73px;
     /*background-image: url(https://cdna.artstation.com/p/assets/images/images/003/195/450/original/vladimir-gaydamashchuk-trophy-room.gif?1470895389);*/
-    background-color: #212121;
+    background-color: #323232;
 }
 #trainer-shop {
     display: none;
     position: absolute;
     height: 100%;
-    width: 1229px;
+    width: 1870px;
     z-index: 90;
     padding-top: 73px;
-    background-image: url(https://wallpaper.dog/large/20459326.jpg);
+    background-color: #323232;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .frame {
     display: flex;
@@ -380,6 +393,9 @@ h6 {
     padding: 15px 10px;
     flex-wrap: wrap;
     flex-direction: column-reverse;
+}
+.frame:hover {
+    border: 3px solid var(--light);
 }
 .frame_txt {
     font-weight: 600;
@@ -404,9 +420,10 @@ h6 {
     display: none;
     position: absolute;
     height: 100%;
-    width: 1229px;
+    width: 1870px;
     z-index: 90;
     padding-top: 73px;
+    background-color: #323232;
 }
 #statstxt {
     font-weight: 900;
@@ -418,6 +435,7 @@ h6 {
 .statsText {
     color: var(--light);
     font-weight: 600;
+    size: 25px;
 }
 #dark {
     position: absolute;

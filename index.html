@@ -7,12 +7,11 @@
     <meta description="This is a website">
     <title>💯STRENGTH CLICKER💯</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon"  type="image/x-icon" href="images/nico the noob.PNG">
+    <link rel="icon"  type="image/x-icon" href="images/bicep button.png">
 </head>
 <body bgcolor="#323232">
     <nav>
         <div class="container">
-        <img id="logoimg" src="images/håkon.PNG" alt="">
         <h1>STRENGTH CLICKER</h1>
         <div id="menu1"class="menu">
             <a id="settingsa" class="is-active" href="#settingsaa" onclick="settings_open()">Settings</a>
@@ -50,29 +49,40 @@
         </div>
     </div>
         <div class="separatorLeft"></div>
+    
         <div class="middle-section">
+            
             <div id="settings">
-                <img id="x_icon" src="images/X icon.png" alt="">
+                <img id="x_icon" onclick="close1()" src="images/X icon.png">
                 <div class="section">
                     <h1 class="settings_txt" id="settings_header">Settings</h1>
                     <hr>
                     <h1>General</h1>
-                    <img src="images/music-note-png.png">
+                    <div>
+                    <button><h6>Music:</h6></button>
+                    <h6>Enable</h6>
+                    <h6>Disable</h6>
+                </div>
+
                 </div>
             </div>
             <div id="achievements">
-                <h1></h1>
+                <img id="x_icon" onclick="close1()" src="images/X icon.png">
+                <Center><h1>Temporarily closed</h1></Center>
             </div>
             <div id="stats">
+                <img id="x_icon" onclick="close1()" src="images/X icon.png">
                 <h1 class="statsText" id="statstxt">Statistics</h1>
+                <hr>
                 <h2 class="statsText" id="generaltxt">General</h2>
+                <hr>
                 <div class="statsgeneral">
-                    <h6 class="statsText">Current strength:</h6>
-                    <h6 class="statsText">Buildings owned: </h6>
+                    <h6 class="statsText" id="CurrentStrength">Current strength:</h6>
+                    <h6 class="statsText" id="buildingsOwned">Buildings owned: </h6>
                 </div>
             </div>
             <div id="trainer-shop">
-                <img id="x_icon" onclick="close()" src="images/X icon.png">
+                <img id="x_icon" onclick="close1()" src="images/X icon.png">
                 <center><h1 id="trainer_shoptxt">Trainer Shop</h1></center>
                 <div class="frame">
                     <h4 class="frame_txt">Dad trainer</h4>
@@ -93,7 +103,7 @@
             </div>
             <div id="rows">
                 <div class="bicep-curl-row"></div>
-                <div class="row"></div>
+                <div class="bench-press-row"></div>
                 <div class="row"></div>
                 <div class="row"></div> 
             </div>
@@ -150,7 +160,7 @@
                 </div>
                 <hr id="lineBicepCurl">
             </div>
-            <div id="bench-press"><button onclick="setbuyamt(this)" id="bench-press" class="trans"><img id="bench-pressimg" draggable="false" src="images/Bench press.png" alt=""></button><hr><h6>Bench Press</h6><h6 id="benchpricetag"><img id="dumbell-price" src="images/bicep button.png" alt=""></h6></div>
+            <div id="bench-press"><button id="bench-press" class="trans"><img id="bench-pressimg" draggable="false" src="images/Bench press.png" alt=""></button><hr><h6>Bench Press</h6><h6 id="benchpricetag"><img id="dumbell-price" src="images/bicep button.png" alt=""></h6></div>
             <hr>
         </div>
 </body>

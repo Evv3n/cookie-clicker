@@ -21,11 +21,14 @@ const bicepCurl = document.querySelector('#dumbell-curl');
 const dumbell_info = document.querySelector('#dumbell-curls');
 const benchPress = document.querySelector('#bench-press');
 const bicepCurlRow = document.querySelector('.bicep-curl-row');
+const benchPressRow = document.querySelector('.bench-press-row')
 const lineBicepCurl = document.querySelector('#lineBicepCurl');
 const dumbellpricetag = document.querySelector('#dumbellpricetag');
 const benchpricetag = document.querySelector('#benchpricetag');
 const x_icon = document.querySelector('#x_icon');
+const buildingsOwned = document.querySelector('#buildingsOwned')
 
+const CurrentStrength = document.querySelector('#CurrentStrength')
 
 //bulk guy
 const buy = document.querySelector('#buy');
@@ -36,7 +39,7 @@ const hundred = document.querySelector('#hundred');
 buyamount = 1
 
 //variabler
-var strength = 100000;
+var strength = 100000000;
 var passive_income = 0;
 //Prices
 var price_for_pwo1 = 100;
@@ -45,8 +48,8 @@ var price_for_pwo3 = 10000;
 var price_bicep_curl = 100;
 var price_bench_press = 600;
 
-
-
+CurrentStrength.innerHTML = 'Current Strength:' + strength;
+buildingsOwned.innerHTML = 'Exercises owned: ';
 dumbellpricetag.innerHTML = price_bicep_curl;
 benchpricetag.innerHTML = price_bench_press;
 
@@ -78,23 +81,39 @@ settingsa.addEventListener('click', settings_open)
 achievementsa.addEventListener('click', achievements_open)
 statsa.addEventListener('click', stats_open)
 trainersa.addEventListener('click', trainers_open)
-x_icon.addEventListener('click', close);
-
+x_icon.addEventListener('click', close1);
+benchPress.addEventListener('click', buy_benchPress)
 function settings_open() {
   settings.style.display = 'block';
+  achievements.style.display = 'none';
+  stats.style.display = 'none';
+  trainer_shop.style.display = 'none';
 }
 function achievements_open() {
   achievements.style.display = 'block';
+  stats.style.display = 'none';
+  trainer_shop.style.display = 'none';
+  settings.style.display = 'none';
 }
 function stats_open() {
   stats.style.display = 'block';
+  trainer_shop.style.display = 'none';
+  settings.style.display = 'none';
+  achievements.style.display = 'none';
 }
+
 function trainers_open() {
   trainer_shop.style.display = 'block';
+  settings.style.display = 'none';
+  achievements.style.display = 'none';
+  stats.style.display = 'none';
 }
-function close() {
+function close1() {
   console.log(passive_income);
   trainer_shop.style.display = 'none';
+  settings.style.display = 'none';
+  achievements.style.display = 'none';
+  stats.style.display = 'none';
 }
 function buy_pwo(){ 
   if(strength > price_for_pwo1){
@@ -126,7 +145,22 @@ function buy_bicepCurl(){
     for(var i=0, l = f; i < l; i++){
       dumbellpricetag.innerHTML = price_bicep_curl = Math.ceil(price_bicep_curl * 1.1);
       bicepCurlRow.style.display = 'block';
+      bicepCurlRow.style.height = '300px'
       bicepCurlRow.innerHTML += "<img id='bicepcurlgif' draggable=false src='images/bicepcurlgif.gif'>"
+    }
+  }
+}
+function buy_benchPress(){
+  if(strength > price_bench_press * buyamount){
+    passive_income += 5;
+    strength -= price_bench_press * buyamount;
+    f = buyamount
+    
+    for(var i=0, l = f; i < l; i++){
+      benchpricetag.innerHTML = price_bench_press = Math.ceil(price_bench_press * 1.1);
+      benchPressRow.style.display = 'block';
+      benchPressRow.style.height = '300px'
+      benchPressRow.innerHTML += "<img id='benchpressgif' draggable=false src='images/bench press.gif'>"
     }
   }
 }
@@ -140,7 +174,7 @@ function setbuyamt(Object) {
   document.getElementById(Object.id).style.color = "#c2382e"
 
   dumbellpricetag.innerHTML = price_bicep_curl * buyamount
-  
+  benchpricetag.innerHTML = price_bench_press * buyamount
 }
     
 var update_strenght = setInterval(myTimer, 1000);
